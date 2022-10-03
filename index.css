@@ -1,0 +1,14 @@
+:root {
+    height: 100vh;
+}
+body {
+    height: 100vh;
+}
+.searcher {
+    position: absolute;
+    left: 35%;
+    font-size: 25px;
+    padding: 0.5rem;
+    box-shadow: 0 0 5px rgb(223, 147, 34);
+}
+
