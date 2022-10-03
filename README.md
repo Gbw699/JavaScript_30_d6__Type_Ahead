@@ -1,0 +1,1 @@
+Proyecto type ahead, del curso JavaScript 30 days challenge, día 6.
