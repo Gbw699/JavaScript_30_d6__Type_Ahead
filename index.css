@@ -1,14 +1,39 @@
 :root {
     height: 100vh;
 }
+
 body {
+    background-image: url("mountains-gfbe3169d3_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
 }
+
+.searcher-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .searcher {
-    position: absolute;
-    left: 35%;
     font-size: 25px;
     padding: 0.5rem;
     box-shadow: 0 0 5px rgb(223, 147, 34);
 }
 
+.suggestions {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid black;
+    padding: 1rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
