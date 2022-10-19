@@ -1,12 +1,8 @@
 :root {
     height: 100vh;
-}
-
-body {
     background-image: url("mountains-gfbe3169d3_1920.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .searcher-form {
@@ -18,13 +14,76 @@ body {
 
 .searcher {
     font-size: 25px;
-    padding: 0.5rem;
-    box-shadow: 0 0 5px rgb(223, 147, 34);
+    background-color: #F2D388;
+    padding: 0.8rem;
+    box-shadow: 0 0 8px #C98474;
+    border: none;
+    border-radius: 5%;
+}
+
+.searcher:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px #874C62;
+}
+
+.searcher:focus {
+    outline: none;
+    box-shadow: 0 0 10px #874C62;
+}
+
+.searcher:focus::placeholder {
+    visibility: hidden;
+}
+
+.searcher::placeholder {
+    color: #874C62;
+}
+
+.searcher::-webkit-search-cancel-button {
+    appearance: none;
 }
 
 .suggestions {
+    color: #874C62;
     font-size: 20px;
+    width: 80vw;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.1);
 }
+
+.suggestions::-webkit-scrollbar {
+    appearance: none;
+}
+
+.suggestions::-webkit-scrollbar:vertical {
+    width: 10px;
+
+}
+
+.suggestions::-webkit-scrollbar-button {
+    display: none;
+
+}
+
+.suggestions::-webkit-scrollbar:horizontal {
+    height: 5px;
+
+}
+
+.suggestions::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+
+}
+
+.suggestions::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin: 1.3rem;
+}
+
 
 ul {
     list-style-type: none;
@@ -32,8 +91,15 @@ ul {
 }
 
 li {
-    border: 1px solid black;
     padding: 1rem 6rem;
     display: flex;
     justify-content: space-between;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hl {
+    background-color: #A7D2CB;
 }
