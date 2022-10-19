@@ -14,11 +14,14 @@
 
 .searcher {
     font-size: 25px;
+    color: #874C62;
     background-color: #F2D388;
     padding: 0.8rem;
     box-shadow: 0 0 8px #C98474;
     border: none;
     border-radius: 5%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.1rem;
 }
 
 .searcher:hover {
